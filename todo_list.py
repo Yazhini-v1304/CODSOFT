@@ -5,7 +5,7 @@ TODO_FILE = "tasks.json"
 
 def load_tasks():
   if not os.path.exists(TODO_FILE):
-    return[]
+   return[]
     with open(TODO_FILE, 'r') as file:
       return json.load(file)
 
@@ -52,7 +52,7 @@ def main():
     print("==== TO-Do List Menu ====")
     print("1. Show Tasks")
     print("2. Add Tasks")
-    print("3. Mark Task aas Done")
+    print("3. Mark Task as Done")
     print("4. Delete Task")
     print("5.Exit")
     choice = input("Choose an option:")
@@ -71,8 +71,8 @@ def main():
     else:
       print("Invalid choice. Try again. \n")
 
-if__name__=="__main__":
+if __name__=="__main__":
 main()
-  
+   
 
 
